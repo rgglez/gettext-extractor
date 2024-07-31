@@ -38,7 +38,7 @@ npm install @rgglez/gettext-extractor
 In order to execute the extraction, you should write and run a simple script. Some a example on how to use the different extractors follow:
 
 ```javascript
-const { GettextExtractor, JsExtractors, HtmlExtractors, RegexExtractors } = require('gettext-extractor');
+const { GettextExtractor, JsExtractors, HtmlExtractors, RegexExtractors } = require('@rgglez/gettext-extractor');
 
 let extractor = new GettextExtractor();
 
