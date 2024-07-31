@@ -35,7 +35,7 @@ npm install @rgglez/gettext-extractor
 
 ## Getting Started
 
-In order to execute the extraction, you should write a simple script. Some a example on how to use the different extractors follow:
+In order to execute the extraction, you should write and run a simple script. Some a example on how to use the different extractors follow:
 
 ```javascript
 const { GettextExtractor, JsExtractors, HtmlExtractors, RegexExtractors } = require('gettext-extractor');
@@ -79,12 +79,6 @@ extractor.savePotFile('./messages.pot');
 
 extractor.printStats();
 ```
-
-## Contributing
-
-From reporting a bug to submitting a pull request: every contribution is appreciated and welcome.
-Report bugs, ask questions and request features using [Github issues][github-issues].
-If you want to contribute to the code of this project, please read the [Contribution Guidelines][contributing].
 
 ## License
 
