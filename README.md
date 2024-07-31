@@ -22,13 +22,13 @@ For the full documentation check out the [Github Wiki](https://github.com/lukasg
 #### Yarn
 
 ```text
-yarn add gettext-extractor
+yarn add @rgglez/gettext-extractor
 ```
 
 #### NPM
 
 ```text
-npm install gettext-extractor
+npm install @rgglez/gettext-extractor
 ```
 
 ## Getting Started
