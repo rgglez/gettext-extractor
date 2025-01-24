@@ -38,7 +38,7 @@ npm install @rgglez/gettext-extractor
 In order to execute the extraction, you should write and run a simple script. Some a example on how to use the different extractors follow:
 
 ```javascript
-const { GettextExtractor, JsExtractors, HtmlExtractors, RegexExtractors } = require('@rgglez/gettext-extractor');
+const { GettextExtractor, JsExtractors, HtmlExtractors } = require('@rgglez/gettext-extractor');
 
 let extractor = new GettextExtractor();
 
@@ -65,15 +65,23 @@ extractor
         HtmlExtractors.elementContent('translate, [translate]')
     ])
     .parseFilesGlob('./src/**/*.html');
+```
+
+Using regex to extract from an Svelte app where a store like ```$_("Hello world")``` is being used:
+
+```javascript
+const { GettextExtractor, JsExtractors, RegexExtractors } = require('@rgglez/gettext-extractor');
+
+let extractor = new GettextExtractor();
 
 extractor
     .createRegexParser([
         RegexExtractors.addCondition({
-            regex: /\_translate\((.*)\)/i,
-            text: 1
+            regex: /\$_\((["'`])((?:\\.|(?!\1).)*?)\1\)/,
+            text: 2
         })
     ])
-    .parseFilesGlob('./src/**/*.tmpl');
+    .parseFilesGlob('./src/**/*.@(js|svelte)');
 
 extractor.savePotFile('./messages.pot');
 
@@ -82,7 +90,7 @@ extractor.printStats();
 
 ## License
 
-Copyright (c) 2017 Lukas Geiter.
+Copyright (c) 2017 Lukas Geiter.<br>
 Copyright (c) 2024 Rodolfo González González.
 
 [MIT license](https://opensource.org/license/mit). Please read the [LICENSE](https://raw.githubusercontent.com/rgglez/gettext-extractor/main/LICENSE) file.
