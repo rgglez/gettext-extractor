@@ -4,6 +4,8 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/rgglez/gettext-extractor/total)
 ![GitHub issues](https://img.shields.io/github/issues/rgglez/gettext-extractor)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/rgglez/gettext-extractor)
+![GitHub stars](https://img.shields.io/github/stars/rgglez/gettext-extractor?style=social)
+![GitHub forks](https://img.shields.io/github/forks/rgglez/gettext-extractor?style=social)
 
 A flexible and powerful [Gettext](https://www.gnu.org/software/gettext/) message extractor with support for JavaScript, TypeScript, JSX and HTML, and others via  [regular expressions](https://en.wikipedia.org/wiki/Regular_expression).
 
