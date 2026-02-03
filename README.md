@@ -93,7 +93,7 @@ extractor.printStats();
 ## License
 
 Copyright (c) 2017 Lukas Geiter.<br>
-Copyright (c) 2024 Rodolfo González González.
+Copyright (c) 2026 Rodolfo González González.
 
 [MIT license](https://opensource.org/license/mit). Please read the [LICENSE](https://raw.githubusercontent.com/rgglez/gettext-extractor/main/LICENSE) file.
 
